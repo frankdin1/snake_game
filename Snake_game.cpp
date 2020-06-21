@@ -92,7 +92,7 @@ void Input()
             dir = DOWN;
             break;
 
-           case 13:
+           case 32:
             dir = STOP;
             break;
            case 27:
