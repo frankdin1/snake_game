@@ -22,7 +22,6 @@ eDirection dir;
 void Setup()
 {
     gameOver = false;
-    //pause = false;
     dir = STOP;//this stops the snake from moving
     x = width/2;//initial position of snake
     y = height/2;//initial position of snake
@@ -98,21 +97,7 @@ void Input()
            case 27:
             gameOver = true;
             break;
-
-           //case 13:
-            //pause = true;
-            //break;
            }
-
-        /*if (GetAsyncKeyState(0x50)==true && pause==false) {
-            pause=true;
-            Sleep(700);
-
-            while (!GetAsyncKeyState(0x50))
-                Sleep(1);
-
-            pause=true;
-            }*/
         }
 }
 void Logic()
@@ -153,8 +138,6 @@ void Logic()
         for (int i = 0; i < nTail; i++)
             if (tailX[i] == x && tailY[i] == y)
                 gameOver = true;
-        //if (keyboard::isKeyPressed(Keyboard::Return))
-           //pause = true;
         if (x == fruitX && y == fruitY){
             score++;
             fruitX = rand()% width+1;
