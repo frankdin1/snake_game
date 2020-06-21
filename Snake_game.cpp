@@ -10,7 +10,7 @@ using namespace std;
 //#define U 22472
 //#define D 22480
 #define GO 27 //GO means gameover
-//#define PAUSE 13// the ENTER button pauses the game
+//#define PAUSE 32// the SPACE button pauses the game
 bool gameOver,pause;
 const int width = 30;//width of field
 const int height = 30;//height of field
